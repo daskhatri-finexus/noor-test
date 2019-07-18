@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TOLL: lightbox</title>
+    <meta name="description" content="Lity is a ultra-lightweight, accessible and responsive lightbox plugin which supports images, iframes and inline content out of the box.">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic' rel='stylesheet' type='text/css'>
+    <link href="assets/style.css" media="all" rel="stylesheet" type="text/css">
+    <link href="assets/prism.css" media="all" rel="stylesheet" type="text/css">
+    <link href="dist/lity.css" rel="stylesheet"/>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-34232738-1', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    </script>
+<!-- SLIDER -->
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+
+
+</script>
+<!-- SLIDE CSS  -->
+<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #54017A;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+
+<!-- SLIDE CSS CLOSE -->
+
+
+</head>
+<body>
+
+<div class="wrap">
+   
+    <p>   <a class="btn" href="#inline" data-lity>Add Check</a>    </p>
+	
+
+    <div id="inline" style="overflow:auto;background:#FDFDF6;padding:20px;width:600px;max-width:100%;border-radius:6px" class="lity-hide">
+      <b>Add Transaction Check</b>
+	  <hr>
+	    <form>
+            <fieldset style="border:0;">
+      <ul style="list-style:none">
+        <li> 
+          <label for="input">URL:</label>
+          <input type="text" size="45" required name="name" id="input">
+        </li>
+        <br>
+        <li> 
+          <label for="label">Name:</label>
+          <input type="text" size="45" required name="name2" id="label">
+        </li>
+        <br>
+        <li> 
+          <label for="label3">Test from:</label>
+ <select name="Region">
+  <option value="eastern US">Eastern US</option>
+  <option value="western US">Western US</option>
+  <option value="europe">Europe</option>
+  <option value="eastern Asis">Eastern Asis</option>
+  <option value="eastern Asis">Australia</option>
+</select>
+        </li>
+		        <br>
+        <li> 
+          <label for="label">Check Interval:</label>
+          30 Minuts
+        </li>
+       <br>
+        <li> 
+        <input type="checkbox" name="vehicle1" value="Bike">Create another &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="submit" form="form1" value="Submit">SAVE</button>&nbsp;&nbsp;<button type="submit" form="form1" value="Submit">CANCEL</button>
+        </li>
+      </ul>
+            </fieldset>
+        </form>
+<br>
+		
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+				
+    </div>
+</div>
+
+<script src="vendor/jquery.js"></script>
+<script src="dist/lity.js"></script>
+
+<script src="assets/prism.js"></script>
+
+</body>
+</html>
